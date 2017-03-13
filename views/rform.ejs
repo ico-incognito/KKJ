@@ -1,0 +1,50 @@
+<div id="mem<%= i %>" class="col s12">
+
+        <br>
+        <div class="row">
+            <div class="input-field col s3">
+                <input name="fname<%= i %>" type="text" class="validate">
+                <label for="fname<%= i %>">First Name<%= i %></label>
+            </div>
+
+
+
+            <div class="input-field col s3">
+                <input name="lname<%= i %>" type="text" class="validate">
+                <label for="lname<%= i %>">Last Name<%= i %></label>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="input-field col s3">
+                Gender
+
+                <input name="group<%= i %>" type="radio" value="male" id="male<%= i %>" />
+                <label for="male<%= i %>">Male<%= i %></label>
+
+                <input name="group<%= i %>" type="radio" value="fmale" id="fmale<%= i %>" />
+                <label for="fmale<%= i %>">Female<%= i %></label>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="input-field col s3">
+                <input name="contact<%= i %>" type="number" class="validate">
+                <label for="contact<%= i %>">Contact No<%= i %></label>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="input-field col s3">
+                <input name="email<%= i %>" type="email" class="validate">
+                <label for="email<%= i %>" data-error="Enter correct email address">Email<%= i %></label>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="input-field col s5">
+                <textarea name="addr<%= i %>" class="materialize-textarea"></textarea>
+                <label for="addr<%= i %>">Address<%= i %></label>
+            </div>
+        </div>
+</div>
