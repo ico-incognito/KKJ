@@ -16,6 +16,15 @@
 
 <%- include navibar.ejs %>
 
+<nav class="white" role="navigation" style="position:fixed; z-index: 90; margin-top: -4%">
+  <div class="nav-wrapper container">
+<ul class="section table-of-contents">
+  <li><a href="#banner1">Section1</a></li>
+  <li><a href="#banner2">Section2</a></li>
+  <li><a href="#banner3">Section3</a></li>
+</ul>
+  </div>
+</nav>
 
 <div id="banner1" class="parallax-container section scrollspy">
   <div class="section no-pad-bot">
@@ -109,41 +118,7 @@
   <div class="parallax"><img src="/images/home.jpg" alt="Unsplashed background img 3"></div>
 </div>
 
-<footer class="page-footer teal">
-  <div class="container">
-    <div class="row">
-      <div class="col l6 s12">
-        <h5 class="white-text">About Us</h5>
-        <p class="grey-text text-lighten-4">Da Da Da Da Da</p>
-
-
-      </div>
-      <div class="col l3 s12">
-        <h5 class="white-text">Other Sub Domains</h5>
-        <ul>
-          <li><a class="white-text" href="#!">Link 1</a></li>
-          <li><a class="white-text" href="#!">Link 2</a></li>
-          <li><a class="white-text" href="#!">Link 3</a></li>
-          <li><a class="white-text" href="#!">Link 4</a></li>
-        </ul>
-      </div>
-      <div class="col l3 s12">
-        <h5 class="white-text">Links</h5>
-        <ul>
-          <li><a class="white-text" href="#!">Link 1</a></li>
-          <li><a class="white-text" href="#!">Link 2</a></li>
-          <li><a class="white-text" href="#!">Link 3</a></li>
-          <li><a class="white-text" href="#!">Link 4</a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  <div class="footer-copyright">
-    <div class="container">
-      A Project By <a class="white-text text-lighten-3" href="#"><b>Proinnovate</b></a>
-    </div>
-  </div>
-</footer>
+<%- include foot.ejs %>
 
 
 <!--  Scripts-->

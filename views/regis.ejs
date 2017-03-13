@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="/stylesheets/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="/stylesheets/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+<%- include navibar.ejs %>
+
+
+
+<div class="row" style="padding:0 0 3% 20%;">
+    <div class="col s5">
+            <ul class="tabs">
+
+                <li class="tab col s3"><a class="active" href="#mem1">Member 1</a></li>
+                <li class="tab col s3"><a href="#mem2">Member 2</a></li>
+                <li class="tab col s3"><a href="#mem3">Member 3</a></li>
+                <li class="tab col s3"><a href="#mem4">Member 4</a></li>
+                <li class="tab col s3"><a href="#mem5">Member 5</a></li>
+
+            </ul>
+    </div>
+    <% for(var i=1;i<6;i++){ %>
+
+        <%- include rform.ejs%>
+
+    <% } %>
+
+    <div class="row">
+        <div class="input-field col s3">
+            <button class="btn waves-effect waves-light" type="submit">Submit</button>
+        </div>
+    </div>
+    </form>
+
+
+</div>
+
+<%- include foot.ejs %>
+
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="/js/materialize.js"></script>
+</body>
+</html>

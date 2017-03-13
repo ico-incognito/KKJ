@@ -8,7 +8,9 @@ var http= require('http');
 var request= require('request');
 
 var index = require('./routes/index');
-var regisform = require('./routes/regisform');
+var regis = require('./routes/regis');
+var comp = require('./routes/comp');
+var about = require('./routes/about');
 
 var app = express();
 
@@ -25,7 +27,9 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', index);
-app.use('/regisform', regisform);
+app.use('/regis', regis);
+app.use('/comp', comp);
+app.use('/about', about);
 
 
 
