@@ -11,6 +11,7 @@ var index = require('./routes/index');
 var regis = require('./routes/regis');
 var comp = require('./routes/comp');
 var about = require('./routes/about');
+var faq = require('./routes/faq');
 
 var app = express();
 
@@ -30,6 +31,7 @@ app.use('/', index);
 app.use('/regis', regis);
 app.use('/comp', comp);
 app.use('/about', about);
+app.use('/faq', faq);
 
 
 
