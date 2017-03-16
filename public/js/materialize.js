@@ -7411,7 +7411,7 @@ DatePicker.defaults = (function( prefix ) {
         // Today and clear
         today: 'Today',
         clear: 'Clear',
-        close: 'Close',
+        close: 'Done',
 
         // The format to show on the `input` element
         format: 'd mmmm, yyyy',

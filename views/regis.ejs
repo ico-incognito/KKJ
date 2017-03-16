@@ -11,7 +11,7 @@
 
 
 
-<div class="row" style="padding:0 0 3% 20%;">
+<div class="container">
     <div class="col s7">
             <ul class="tabs">
 
@@ -32,6 +32,20 @@
 
     <% } %>
 
+        <div class="row">
+        <div class="input-field col s3"><br>
+            <select name="cat">
+                <option value="" disabled selected>Choose a category</option>
+                <option value="cat1">Category 1: Name</option>
+                <option value="cat2">Category 2: Name</option>
+                <option value="cat3">Category 3: Name</option>
+                <option value="cat4">Category 4: Name</option>
+                <option value="cat5">Category 5: Name</option>
+            </select>
+            <label for="cat" style="font-size:1rem">Category</label>
+        </div>
+        </div>
+
     <div class="row">
         <div class="input-field col s3">
             <button class="btn waves-effect waves-light" type="submit">Submit</button>
@@ -46,5 +60,6 @@
 
 <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 <script src="/js/materialize.js"></script>
+<script src="/js/initpara.js"></script>
 </body>
 </html>

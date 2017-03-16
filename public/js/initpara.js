@@ -22,6 +22,15 @@ function initMap() {
         map: map
     });
 }
+$(document).ready(function() {
+    $('select').material_select();
+});
+
+$('.datepicker').pickadate({
+    selectMonths: true,
+    selectYears: 15
+});
+
 
 var options = [
     {selector: '#cat3', offset: 50, callback: function(el) {

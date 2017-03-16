@@ -7,8 +7,6 @@
                 <label for="fname<%= i %>">First Name<%= i %></label>
             </div>
 
-
-
             <div class="input-field col s3">
                 <input name="lname<%= i %>" type="text" class="validate">
                 <label for="lname<%= i %>">Last Name<%= i %></label>
@@ -17,15 +15,24 @@
 
         <div class="row">
             <div class="input-field col s3">
-                Gender
-
+                <br><br>
                 <input name="group<%= i %>" type="radio" value="Male" id="male<%= i %>" />
                 <label for="male<%= i %>">Male<%= i %></label>
 
                 <input name="group<%= i %>" type="radio" value="Female" id="fmale<%= i %>" />
                 <label for="fmale<%= i %>">Female<%= i %></label>
+                <label for="group<%= i %>">Gender<%= i %></label>
             </div>
         </div>
+
+    <div class="row">
+        <div class="input-field col s3">
+            <br><br>
+            <input type="date" name="dob<%= i %>">
+            <label for="dob<%= i %>">Date Of Birth</label>
+        </div>
+    </div>
+
 
         <div class="row">
             <div class="input-field col s3">
@@ -47,4 +54,18 @@
                 <label for="addr<%= i %>">Address<%= i %></label>
             </div>
         </div>
+
+    <div class="row">
+        <div class="input-field col s3">
+            <input name="qual<%= i %>" type="text" class="validate">
+            <label for="qual<%= i %>">Qualification<%= i %></label>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="input-field col s3">
+            <input name="inst<%= i %>" type="text" class="validate">
+            <label for="inst<%= i %>">Institution Name<%= i %></label>
+        </div>
+    </div>
 </div>
