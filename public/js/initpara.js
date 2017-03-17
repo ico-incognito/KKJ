@@ -31,21 +31,25 @@ $('.datepicker').pickadate({
     selectYears: 15
 });
 
+$(document).ready(function(){
+    $('.slider').slider();
+});
+
 
 var options = [
-    {selector: '#cat3', offset: 50, callback: function(el) {
+    {selector: '#cat2', offset: 200, callback: function(el) {
         Materialize.show($(el));
         Materialize.toast("This is our ScrollFire Demo!", 1500 );
     } },
-    {selector: '#cat3', offset: 50, callback: function(el) {
-        Materialize.show($(el));
+    {selector: '#cat3', offset: 200, callback: function(el) {
+        Materialize.showStaggeredList($(el));
         Materialize.toast("This is our ScrollFire Demo!", 1500 );
     } },
-    {selector: '#cat3', offset: 50, callback: function(el) {
-        Materialize.show($(el));
+    {selector: '#cat4', offset: 200, callback: function(el) {
+        Materialize.showStaggeredList($(el));
         Materialize.toast("This is our ScrollFire Demo!", 1500 );
     } },
-    {selector: '#cat3', offset: 50, callback: function(el) {
+    {selector: '#cat5', offset: 200, callback: function(el) {
         Materialize.show($(el));
         Materialize.toast("This is our ScrollFire Demo!", 1500 );
     } }
