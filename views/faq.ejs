@@ -19,18 +19,61 @@
 <div class="container">
     <h1 class="header center teal-text text-lighten-2">FAQs</h1>
 <ul class="collapsible" data-collapsible="expandable">
+
+
+    <% var content={
+        cat1: [
+            {
+                "question": "Question1",
+                "answer": "Answer1"
+            },
+            {
+                "question": "Question2",
+                "answer": "Answer2"
+            },
+            {
+                "question": "Question3",
+                "answer": "Answer3"
+            }
+        ],
+        cat2: [
+            {
+                "question": "Question1",
+                "answer": "Answer1"
+            },
+            {
+                "question": "Question2",
+                "answer": "Answer2"
+            },
+            {
+                "question": "Question3",
+                "answer": "Answer3"
+            }
+        ]
+    }
+
+    %>
+
+    <h5 class="header center black-text text-lighten-2">Category1</h5>
+    <% for(var i=0; i<content.cat1.length; i++){%>
+        <li>
+            <div class="collapsible-header"><i class="material-icons">info_outline</i><%= content.cat1[i].question %></div>
+            <div class="collapsible-body"><span><%= content.cat1[i].answer %></span></div>
+        </li>
+    <% } %>
+
+
+    <h5 class="header center black-text text-lighten-2">Category2</h5>
+    <% for(var i=0; i<content.cat2.length; i++){%>
     <li>
-        <div class="collapsible-header"><i class="material-icons">info_outline</i>First</div>
-        <div class="collapsible-body"><span>Answer</span></div>
+        <div class="collapsible-header"><i class="material-icons">info_outline</i><%= content.cat2[i].question %></div>
+        <div class="collapsible-body"><span><%= content.cat2[i].answer %></span></div>
     </li>
-    <li>
-        <div class="collapsible-header"><i class="material-icons">info_outline</i>Second</div>
-        <div class="collapsible-body"><span>Answer</span></div>
-    </li>
-    <li>
-        <div class="collapsible-header"><i class="material-icons">info_outline</i>Third</div>
-        <div class="collapsible-body"><span>Answer</span></div>
-    </li>
+
+    <% } %>
+
+
+
 </ul>
 </div>
 

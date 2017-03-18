@@ -35,6 +35,23 @@ $(document).ready(function(){
     $('.slider').slider();
 });
 
+$(document).ready(function(){
+    $('.target').pushpin({
+        top: 0,
+        bottom: 1000,
+        offset: 0
+    });
+});
+
+$(".button-collapse").sideNav();
+
+$('.button-collapse1').sideNav({
+        menuWidth: 300, // Default is 300
+        edge: 'right', // Choose the horizontal origin
+        closeOnClick: true, // Closes side-nav on <a> clicks, useful for Angular/Meteor
+        draggable: true // Choose whether you can drag to open on touch screens
+    }
+);
 
 var options = [
     {selector: '#cat2', offset: 200, callback: function(el) {
