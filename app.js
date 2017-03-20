@@ -13,6 +13,8 @@ var comp = require('./routes/comp');
 var about = require('./routes/about');
 var faq = require('./routes/faq');
 var gallery = require('./routes/gallery');
+var timeline = require('./routes/timeline');
+
 
 var app = express();
 
@@ -34,6 +36,7 @@ app.use('/comp', comp);
 app.use('/about', about);
 app.use('/faq', faq);
 app.use('/gallery', gallery);
+app.use('/timeline', timeline);
 
 
 
