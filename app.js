@@ -14,6 +14,8 @@ var about = require('./routes/about');
 var faq = require('./routes/faq');
 var gallery = require('./routes/gallery');
 var timeline = require('./routes/timeline');
+var intro = require('./routes/intro');
+var home = require('./routes/home');
 
 
 var app = express();
@@ -37,6 +39,8 @@ app.use('/about', about);
 app.use('/faq', faq);
 app.use('/gallery', gallery);
 app.use('/timeline', timeline);
+app.use('/intro', intro);
+app.use('/home', home);
 
 
 
