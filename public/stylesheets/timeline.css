@@ -17,7 +17,7 @@
     display: block;
     content: "";
     width: 2px;
-    height: calc(50% - 30px);
+    height: calc(50% - 40px);
     position: absolute;
     background: #d2d2d2;
     left: calc(50% - 1px);
@@ -43,25 +43,18 @@
     display: none;
 }
 
-.timeline .timeline-event:nth-child(even) .timeline-content {
-    margin-left: calc(50% + 50px);
-}
-
-.timeline .timeline-event:nth-child(odd) .timeline-content {
-    margin-left: 0;
-}
-
 .timeline .timeline-badge {
     display: block;
     position: absolute;
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     background: #d2d2d2;
-    top: calc(50% - 35px);
-    right: calc(50% - 30px);
+    top: calc(50% - 30px);
+    right: calc(50% - 25px);
     border-radius: 50%;
     text-align: center;
     cursor: default;
+    font-size: 35px;
 }
 
 .timeline .timeline-badge i {
@@ -90,11 +83,19 @@
     }
 }
 
-.abc{
+.timeline .timeline-event:nth-child(even) .timeline-content {
+    margin-left: calc(50% + 50px);
+}
+
+.timeline .timeline-event:nth-child(odd) .timeline-content {
+    margin-left: 0;
+}
+
+.second-footer{
     background-color: teal;
 }
 
-.abc:hover{
+.second-footer:hover{
     background-color: #009688;
     z-index: 50;
 }
