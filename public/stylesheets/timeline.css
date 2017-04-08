@@ -14,17 +14,17 @@
 }
 
 .timeline .timeline-event .desc-right {
-    position: relative;
+    position: absolute;
     margin-left: calc(50% + 50px);
     width: calc(50% - 50px);
-    top: -450px;
+    top: 10px;
 }
 
 .timeline .timeline-event .desc-left {
-    position: relative;
+    position: absolute;
     margin-left:0;
     width: calc(50% - 50px);
-    top: -450px;
+    top: 10px;
 }
 
 .timeline .timeline-event::before {
@@ -104,10 +104,12 @@
         left: -5px;
     }
     .timeline .timeline-event .desc-left {
+        position: relative;
         margin-left:60px;
         top: 0px;
     }
     .timeline .timeline-event .desc-right {
+        position: relative;
         margin-left:60px;
         top: 0px;
     }
